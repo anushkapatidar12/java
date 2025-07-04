@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class project {
+    public static void main(String[] args) {
+    
+        Scanner sc = new Scanner(System.in);
+        String input;
+        System.out.println("Hello!, I am a Chatbot - type 'bye' to exit");
+        
+        while (true) { 
+            System.out.println("You: ");
+            input = sc.nextLine().toLowerCase();
+
+            if(input.equals("bye")){
+                System.out.println("Chatbot: See you next time , have a great day");
+                break;
+            }
+
+            //if conditions for different inputs
+            if(input.contains("Hello") || input.contains("hi")){
+                System.out.println("Hello, how can i help you today?");
+            }else if(input.contains("how are you")){
+                System.out.println("just a code working finely..."); 
+                
+            }else if(input.contains("add 5+6")){
+                System.out.println("the sum is 11");
+            }else{
+                System.out.println("sorry i did not understand that. ");
+            }
+        }
+           
+    
+    }
+        
+    }
